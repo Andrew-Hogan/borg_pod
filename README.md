@@ -60,22 +60,22 @@ All you would do is add the @assimilate decorator above both:
 Creating and converting an instance of one would look like:
 
 
-my_first_unique = SomeClassA()
+    my_first_unique = SomeClassA()
 
-my_second_unique = SomeClassA()
+    my_second_unique = SomeClassA()
 
-my_third_unique = OtherClassB()
+    my_third_unique = OtherClassB()
 
-assert my_first_unique is not my_second_unique and my_third_unique is not my_first_unique
+    assert my_first_unique is not my_second_unique and my_third_unique is not my_first_unique
 
-first_b = SomeClassB(my_first_unique)
+    first_b = SomeClassB(my_first_unique)
 
-second_b = SomeClassB(my_second_unique)
+    second_b = SomeClassB(my_second_unique)
 
-third_b = SomeClassB(my_third_unique)
+    third_b = SomeClassB(my_third_unique)
 
-assert (first_b is my_first_unique and second_b is my_second_unique and third_b is my_third_unique
-    and first_b is not third_b and first_b is not second_b)
+    assert (first_b is my_first_unique and second_b is my_second_unique and third_b is my_third_unique
+        and first_b is not third_b and first_b is not second_b)
 
 And that's it! More advanced usage involves the @resist decorator, to avoid the self reference injection - but most
 devs don't need to worry about that. You can find more thorough documentation inside of the module. Classes with
