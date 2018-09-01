@@ -7,17 +7,19 @@ it.
 
 ## Get
 
-Clone this repo, or use pip3 install borg_pod
+Clone this repo, or use:
+
+    pip3 install borg_pod
 
 ## Use
 
 At the top of your module, be sure to include:
 
-from borg_pod import resist, assimilate, BorgPod
+    from borg_pod import resist, assimilate, BorgPod
 
 Or, if you adhere to Google standards:
 
-import borg_pod as bp_or_be_oil
+    import borg_pod as bp_or_be_oil
 
 You've imported borg_pod's relevant attributes directly like a sane person?  Let's say you have some classes you want
 to be able to switch an instance between:
