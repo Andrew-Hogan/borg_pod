@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="borg_pod",
-    version="1.0.0",
+    version="1.0.3",
     author="Andrew M. Hogan",
     author_email="drewthedruid@gmail.com",
     description="A lightweight, decoupled wrapper for dynamic class assignment.",
@@ -15,6 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[],
     platforms=['any'],
+    license="LICENSE",
     classifiers=[
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
